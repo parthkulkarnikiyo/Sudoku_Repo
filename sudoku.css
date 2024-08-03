@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+
+#errors {
+    color: coral;
+}
+
+#board {
+    width: 450px;
+    height: 450px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid lightgray;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid black;
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.number-selected {
+    background-color: gray;
+}
+
+.tile-start {
+    background-color: whitesmoke;
+}
+
+.horizontal-line {
+    border-bottom: 1px solid black;
+}
+
+.vertical-line {
+    border-right: 1px solid black;
+}
+
+/* Button styles */
+.solve-btn,
+.reset-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Add margin between buttons */
+    border: 2px solid #4CAF50;
+    /* Green border */
+    color: white;
+    /* White text */
+    background-color: #4CAF50;
+    /* Green background */
+    border-radius: 8px;
+    /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+}
+
+.solve-btn:hover,
+.reset-btn:hover {
+    background-color: #45a049;
+    /* Darker green background on hover */
+}
+
+.solve-btn:focus,
+.reset-btn:focus {
+    outline: none;
+    /* Remove outline on focus */
+}
+
+
+/* Styling for the solution image */
+#solutionImage {
+    display: none;
+    /* Initially hidden */
+}
+
+.show {
+    display: block;
+    /* Show the image */
+    /* Add any additional styles you want for the displayed image */
+}
+
+/* Add your CSS styles here */

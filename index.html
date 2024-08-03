@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0 user-scalable=no">
+        <title>Sudoku</title>
+
+        <link rel="stylesheet" href="sudoku.css">
+        
+    </head>
+
+    <body>
+        <h1>Sudoku</h1>
+        <hr>
+        <h2 id="errors">0</h2>
+        <!-- 9x9 board -->
+        <div id="board"></div>
+        <br>
+        <div id="digits">
+        </div>
+        <button class="solve-btn" onclick="toggleSolutionImage()">Solution</button>
+        <button class="reset-btn" onclick="resetSudoku()">Reset</button>
+    <div id="solution">
+        <!-- Solution will be displayed here -->
+    </div>
+    <img src="Sample Puzzle.png" id="solutionImage" />
+    </body>
+    <script src="sudoku.js"></script>
+
+</html>
